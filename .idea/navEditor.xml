@@ -29,13 +29,25 @@
                       </LayoutPositions>
                     </value>
                   </entry>
+                  <entry key="addItemFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="-276" />
+                            <option name="y" value="-128" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
                   <entry key="firstFragment">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="12" />
-                            <option name="y" value="12" />
+                            <option name="x" value="-25" />
+                            <option name="y" value="-260" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -46,18 +58,6 @@
                               </value>
                             </entry>
                           </map>
-                        </option>
-                      </LayoutPositions>
-                    </value>
-                  </entry>
-                  <entry key="splashFragment">
-                    <value>
-                      <LayoutPositions>
-                        <option name="myPosition">
-                          <Point>
-                            <option name="x" value="-87" />
-                            <option name="y" value="378" />
-                          </Point>
                         </option>
                       </LayoutPositions>
                     </value>

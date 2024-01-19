@@ -5,14 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    tools:context=".ui.info.HomeFragment">
+    tools:context=".ui.info.HomeFragment"
+    android:background="@color/white">
 
     <ImageView
-        android:id="@+id/logo1"
+        android:id="@+id/logo_check24"
         android:layout_width="285dp"
         android:layout_height="100dp"
         android:src="@drawable/check24"
-        app:layout_constraintBottom_toTopOf="@id/logo2"
+        app:layout_constraintBottom_toTopOf="@id/logo_sellify"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,22 +21,22 @@
         app:layout_constraintVertical_chainStyle="packed" />
 
     <ImageView
-        android:id="@+id/logo2"
-        android:layout_width="285dp"
-        android:layout_height="100dp"
-        android:src="@drawable/check24"
+        android:id="@+id/logo_sellify"
+        android:layout_width="225dp"
+        android:layout_height="90dp"
+        android:src="@drawable/sellify"
         app:layout_constraintBottom_toTopOf="@id/startButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/logo1"
+        app:layout_constraintTop_toBottomOf="@id/logo_check24"
         app:layout_constraintVertical_chainStyle="packed" />
 
     <Button
         android:id="@+id/startButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Start"
+        android:text="@string/start"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
