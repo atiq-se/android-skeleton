@@ -3,6 +3,7 @@ plugins {
     id("org.jetbrains.kotlin.android")
     id ("kotlin-kapt")
     id ("dagger.hilt.android.plugin")
+    id ("kotlin-parcelize")
 }
 
 android {
@@ -57,11 +58,13 @@ dependencies {
     // gson
     implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
 
-    // Network
-    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
-    implementation("com.squareup.okhttp3:logging-interceptor:4.10.0")
+    // hilt & room
+    implementation ("androidx.room:room-common:2.6.1")
+    implementation ("androidx.room:room-ktx:2.6.1")
+    implementation ("androidx.room:room-runtime:2.6.1")
+    implementation ("androidx.test.ext:junit-ktx:1.1.5")
+    kapt ("androidx.room:room-compiler:2.6.1")
 
-    // hilt
     implementation ("com.google.dagger:hilt-android:2.42")
     annotationProcessor ("com.google.dagger:hilt-compiler:2.42")
     kapt ("com.google.dagger:hilt-android-compiler:2.42")

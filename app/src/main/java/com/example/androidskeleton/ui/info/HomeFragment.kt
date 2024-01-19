@@ -9,9 +9,6 @@ import androidx.navigation.fragment.findNavController
 import com.example.androidskeleton.R
 import com.example.androidskeleton.databinding.FragmentHomeBinding
 
-/**
- * A simple [Fragment] subclass as the second destination in the navigation.
- */
 class HomeFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding? = null
@@ -32,7 +29,7 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.startButton.setOnClickListener {
-            findNavController().navigate(R.id.action_HomeFragment_to_FirstFragment)
+            findNavController().navigate(R.id.action_HomeFragment_to_listFragment)
         }
     }
 
