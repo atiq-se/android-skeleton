@@ -23,6 +23,7 @@ constructor(private val articleRepository: ArticleRepository) : ViewModel() {
     internal val articlesEvent = articlesEventChannel.receiveAsFlow()
 
     /***********************************************************************************/
+    //private lateinit var _sharedItem : Article
 
     fun insertArticles(article: Article) = viewModelScope.launch {
         withContext(Dispatchers.IO) {
@@ -39,4 +40,9 @@ constructor(private val articleRepository: ArticleRepository) : ViewModel() {
         }
 
     }
+
+    /*fun updateItem(article: Article){
+        _sharedItem = article
+    }*/
+//    fun getItem() = _sharedItem
 }

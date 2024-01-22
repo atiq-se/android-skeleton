@@ -34,7 +34,7 @@ class AddItemFragment : Fragment() {
         binding.imageButtonCamera.setOnClickListener {
 
         }
-
+        //val item = articleViewModel.getItem()
         binding.buttonSave.setOnClickListener {
             val title = _binding?.editTextTitle?.text.toString()
             val description = _binding?.editTextDescription?.text.toString()
@@ -53,7 +53,12 @@ class AddItemFragment : Fragment() {
 
         binding.buttonCancel.setOnClickListener{
             findNavController().navigate(R.id.action_addItemFragment_to_listFragment)
+
         }
+    }
+
+    fun updateView(item: Article){
+        binding.editTextTitle
     }
 
 

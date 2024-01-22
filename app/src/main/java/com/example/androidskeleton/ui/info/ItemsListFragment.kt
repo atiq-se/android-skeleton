@@ -65,7 +65,8 @@ class ItemsListFragment : Fragment() {
     }
 
     private fun onArticleClick() = ArticlesAdapter.ArticleItemClickListener { data ->
-
+        //articleViewModel.updateItem(data)
+        findNavController().navigate(R.id.action_listFragment_to_addItemFragment)
     }
 
     private fun observeArticleViewModel() {
